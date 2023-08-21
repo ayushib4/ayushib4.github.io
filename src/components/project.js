@@ -20,7 +20,7 @@ function Project(props) {
                         <Card.Text>{props.awards}</Card.Text>
                         <Card.Text>
                             {props.url ? <FontAwesomeIcon icon={faFileCode} onClick={() => window.open(props.url)} size="xl" style={{ cursor: 'pointer', marginRight: "0.5em" }} /> : null}
-                            <FontAwesomeIcon icon={faGithub} onClick={() => window.open(props.faGithub)} size="xl" style={{ cursor: 'pointer' }} />
+                            <FontAwesomeIcon icon={faGithub} onClick={() => window.open(props.github)} size="xl" style={{ cursor: 'pointer' }} />
                         </Card.Text>
                     </Card.Body>
                 </Col>
