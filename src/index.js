@@ -10,8 +10,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const appRouter = createBrowserRouter(createRoutesFromElements(
   <Route path="/" errorElement={<HomePage/>}>
-    <Route index element={<HomePage/>} />
-    <Route path="/projects" element={<ProjectPage/>} />,
+    <Route index element={<HomePage/>} errorElement={<HomePage/>}/>
+    <Route path="/projects" element={<ProjectPage/>} errorElement={<ProjectPage/>}/>,
   </Route>
 ))
 
