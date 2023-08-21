@@ -1,6 +1,6 @@
 .projectCard {
     min-height: 15em;
-    max-height: 20em;
+    max-height: min-content;
     display: flex;
     flex-wrap: wrap;
     padding: 1em;
