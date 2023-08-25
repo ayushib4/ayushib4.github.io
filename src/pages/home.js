@@ -22,7 +22,7 @@ function HomePage() {
                         <h1>Ayushi Batwara</h1>
                         <p className='p'>Electrical Engineering & Computer Science (EECS) and Business @ <a className="link" style={{ cursor: 'pointer' }} onClick={() => window.open("https://met.berkeley.edu")}>UC Berkeley M.E.T.</a></p>
                         <div className="buttons">
-                            <Button variant="dark" onClick={() => window.open("https://drive.google.com/file/d/1wBurpGZhOMPJI1dITgjhFwn_OXQb6FvH/view?usp=sharing")}>Resume/CV</Button>
+                            <Button variant="dark" onClick={() => window.open("https://drive.google.com/file/d/1ZYN15LmsJcu_RBz8SzwAU1mr4IdfhPNV/view?usp=sharing")}>Resume/CV</Button>
                             <Button variant="dark" onClick={() => {navigate("/projects")}}>Projects</Button>
                         </div>
                         <div className="socialMedia">
