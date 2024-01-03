@@ -14,7 +14,7 @@ function HomePage() {
     const navigate = useNavigate();
     return (
         <>
-        <FontAwesomeIcon icon={faHome} size="xl" style={{cursor: 'pointer'}} onClick={() => window.location.href="/"} className="home" />
+        <FontAwesomeIcon icon={faHome} size="xl" style={{cursor: 'pointer', position: 'fixed', top: '15px', left: '15px', zIndex: 999}} onClick={() => window.location.href="/"} className="home" />
             <div className="homePage">
                 <FadeIn>
                     <div className="heading">
