@@ -9,6 +9,7 @@ import origin from '../images/origin.png';
 import nexpert from '../images/nexpert.png';
 import smartfin from '../images/smartfin.png'
 import bitebuddy from '../images/bitebuddy.png'
+import ephemeral from '../images/ephemeral.png'
 
 function ProjectPage() {
     const projects = [
@@ -23,6 +24,15 @@ function ProjectPage() {
         },
         {
             id: "2",
+            name: "Ephemeral",
+            description: "Ephemeral is an autonomous agent that learns from your interactions and proactively takes actions, provides answers, and offers advice.",
+            awards: "Awarded Best Use of Together API at Stanford's TreeHacks 2024.",
+            imageUrl: ephemeral,
+            url: "https://devpost.com/software/invisible-me",
+            github: "https://github.com/JasonDing9/ephemeral"
+        },
+        {
+            id: "3",
             name: "Nexpert",
             description: "An open-source research tool that fast-tracks the concept discovery process, making you the next expert on any topic based on the literature.",
             awards: "Developed at Anthropic's Claude 2 Hackathon.",
@@ -31,7 +41,7 @@ function ProjectPage() {
             github: "https://github.com/ayushib4/nexpert"
         },
         {
-            id: "3",
+            id: "4",
             name: "BiteBuddy",
             description: "An all-in-one meal planner and personal CRM powered by graph machine learning and large language models.",
             awards: "Awarded Most Creative Use of Reflex at UC Berkeley's CalHacks 2023.",
@@ -40,7 +50,7 @@ function ProjectPage() {
             github: "https://github.com/pgasawa/friendly-food-finder-dev"
         },
         {
-            id: "4",
+            id: "5",
             name: "smartFin",
             description: "smartFin brings smart financial advice catered to your banking data and financial goals through our version of Mr. Wonderful, a generative AI agent that takes on the personality of the real Mr. Wonderful to give you personalized advice.            ",
             awards: "Developed at UC Berkeley's AI Hackathon.",
