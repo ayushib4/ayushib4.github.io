@@ -85,10 +85,6 @@ function pieceTeaser(md) {
   return clean.length > 220 ? clean.slice(0, 220).replace(/\s+\S*$/, "") + "…" : clean;
 }
 
-function readingMinutes(md) {
-  return Math.max(1, Math.round(pieceText(md).split(/\s+/).filter(Boolean).length / 200));
-}
-
 // Last-commit date for a file, cached per session to spare the API.
 async function lastEdited(path) {
   const key = `edited:${path}`;
@@ -156,10 +152,8 @@ async function renderWritingIndex(article, md) {
       try {
         const piece = await (await fetch(`/content/writing/${c.slug}.md`)).text();
         c.teaser.textContent = pieceTeaser(piece);
-        const minutes = `${readingMinutes(piece)} min read`;
-        c.meta.textContent = minutes;
         lastEdited(`content/writing/${c.slug}.md`).then((d) => {
-          if (d) c.meta.textContent = `${d} · ${minutes}`;
+          c.meta.textContent = d;
         });
       } catch {}
     })
